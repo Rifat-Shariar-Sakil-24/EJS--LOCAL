@@ -1,0 +1,25 @@
+<%- include('header'); -%>
+    
+  
+
+    <% for(var i = 0; i < contents.length && titles.length ; i++){ %>
+      <h1> <%= titles[i] %></h1>
+      
+      <p> <%= contents[i] %>
+
+         <form action="/seeContent" method="post">
+                <button type="submit" name="submit" value="<%= i %>">readmore</button>
+         </form>
+        <!-- <a href="/<%= titles[i] %>">readmore</a> -->
+        
+    
+    </p>   
+      
+       
+     
+ <%   }  %>
+
+ <%- include('footer'); -%>
+
+ 
+
